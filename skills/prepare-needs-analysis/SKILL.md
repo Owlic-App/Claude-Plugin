@@ -1,4 +1,5 @@
 ---
+name: prepare-needs-analysis
 description: >
   Guides the Qualiopi needs-analysis (analyse des besoins) preparation step of
   the Owlic training-actions workflow: runs a structured interview eliciting
