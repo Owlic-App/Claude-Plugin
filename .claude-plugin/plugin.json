@@ -1,0 +1,16 @@
+{
+  "name": "owlic",
+  "version": "0.1.0",
+  "description": "Claude Code plugin providing domain specialist agents for the Owlic API — one agent per API domain (training programs, and more to come).",
+  "author": {
+    "name": "Owlic"
+  },
+  "repository": "https://github.com/Owlic-App/Claude-Plugin",
+  "license": "MIT",
+  "keywords": [
+    "owlic",
+    "training-programs",
+    "api",
+    "specialist-agent"
+  ]
+}
