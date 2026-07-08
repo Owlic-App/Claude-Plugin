@@ -1,7 +1,7 @@
 {
   "name": "owlic",
   "version": "0.1.0",
-  "description": "Claude Code plugin for the Owlic API (https://api.owlic.fr) — context-isolated domain specialist agents (training programs; training actions and the Qualiopi workflow) plus a generic /owlic command that routes each request to the right specialist.",
+  "description": "Claude Code plugin for the Owlic API (https://api.owlic.fr) — context-isolated domain specialist agents (training programs; training actions and the Qualiopi workflow), guided-preparation skills for the workflow's first steps, plus a generic /owlic command that routes each request to the right specialist.",
   "author": {
     "name": "Owlic"
   },
@@ -13,6 +13,7 @@
     "training-programs",
     "training-actions",
     "qualiopi",
+    "needs-analysis",
     "formation",
     "slash-command",
     "specialist-agent"
