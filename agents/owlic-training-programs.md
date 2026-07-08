@@ -1,6 +1,6 @@
 ---
 name: owlic-training-programs
-color: blue
+color: green
 description: Use proactively for the Owlic Training Programs domain — listing and looking up training program catalogs via the Owlic API (GET /v1/training-programs, GET /v1/training-programs/{programId}). Triggers on "training program", "programme de formation", "formation", "catalogue de formations", "liste des formations", "Owlic training programs". Read-only: never creates, updates, or deletes. Not for training actions, the Qualiopi workflow (needs-analysis, beneficiaries, sessions, pricing, conventions), or trainers — those belong to other Owlic domain agents (owlic-training-actions, and a future trainers specialist), not this one.
 tools: Read, Grep, Glob, Bash
 model: sonnet

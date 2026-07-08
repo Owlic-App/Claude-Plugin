@@ -3,7 +3,7 @@ name: owlic-training-actions
 description: Use proactively for the Owlic "Training Actions" domain (French — action de formation) — creating a training action and progressing it through its sequential Qualiopi-compliant workflow: needs analysis (analyse des besoins), beneficiaries (bénéficiaires), training program assignment, session planning, trainer assignment, pricing, and convention generation (convention de formation). Calls the Owlic REST API (https://api.owlic.fr/v1) directly via Bash+curl. Triggers on "training action", "action de formation", "Qualiopi", "convention de formation", "analyse des besoins", "bénéficiaires de formation", "plan training sessions", "assign trainers", "set training action pricing". Not for browsing or filtering the training program catalog — use the owlic-training-programs agent for GET /v1/training-programs. Not for full trainer directory management — no agent owns that domain yet; say so rather than guessing, beyond the inline trainer details this call itself accepts.
 tools: Read, Grep, Glob, Bash
 model: sonnet
-color: orange
+color: pink
 ---
 
 # Purpose
