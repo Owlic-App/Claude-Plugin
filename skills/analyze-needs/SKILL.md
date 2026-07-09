@@ -1,25 +1,26 @@
 ---
-name: prepare-needs-analysis
+name: analyze-needs
 description: >
-  Guides the Qualiopi needs-analysis (analyse des besoins) preparation step of
-  the Owlic training-actions workflow: runs a structured interview eliciting
-  the interested program, training objectives, concrete applications, and
+  Guides step 2 (needs analysis / analyse des besoins) of the Owlic Qualiopi
+  training-action workflow: runs a structured interview eliciting the
+  interested program, training objectives, concrete applications, and
   improvement points; validates every answer against the exact
   POST /v1/training-actions/{actionId}/needs-analysis field contract (string
   lengths, 1-20 trainingObjectives capped at 500 chars each); and produces a
   validated JSON draft payload ready to hand off to the owlic-training-actions
   agent, which owns the actual API call. Does not call the Owlic API itself —
-  no auth, no curl, no base URL. INVOKE when the user wants to "prepare a
-  needs analysis", "analyse des besoins", "Qualiopi needs analysis", draft
-  training objectives, or prep the needs-analysis payload before submitting
-  it via owlic-training-actions. Not for beneficiaries, sessions, pricing, or
-  convention generation, and not for actually submitting the payload — those
-  belong to owlic-training-actions.
+  no auth, no curl, no base URL. INVOKE when the user wants to "analyze
+  needs", "prepare a needs analysis", "analyse des besoins", "Qualiopi needs
+  analysis", draft training objectives, or prep the needs-analysis payload
+  before submitting it via owlic-training-actions. Not for beneficiaries,
+  sessions, program assignment, trainers, pricing, or convention generation,
+  and not for actually submitting the payload — those belong to
+  owlic-training-actions.
 argument-hint: "[actionId]"
 allowed-tools: AskUserQuestion
 ---
 
-# prepare-needs-analysis
+# analyze-needs
 
 ## Mission
 
@@ -101,14 +102,14 @@ Confirm readiness via `AskUserQuestion` ("Hand off now" / "Let me revise an answ
 If `$ARGUMENTS` is empty, show this and then start Phase 0:
 
 ```
-# prepare-needs-analysis
+# analyze-needs
 
 Guides the Qualiopi needs-analysis (analyse des besoins) prep step: interview,
 validate, produce a draft JSON payload for handoff to owlic-training-actions.
 
-Usage: /owlic:prepare-needs-analysis [actionId]
+Usage: /owlic:analyze-needs [actionId]
 
 Example:
-  /owlic:prepare-needs-analysis
-  /owlic:prepare-needs-analysis 4f2b1c9a-...
+  /owlic:analyze-needs
+  /owlic:analyze-needs 4f2b1c9a-...
 ```
