@@ -5,3 +5,6 @@
 
 # agentic-factory local working memory
 .ai/
+
+# Mod types laid by Claude Code when it loads the hooks module
+.claude-plugin/types/

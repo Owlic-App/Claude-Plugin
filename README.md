@@ -39,6 +39,15 @@ Examples:
 
 `/owlic:owlic` routes each request to the right specialist agent.
 
+### Follow-up pane
+
+```
+/owlic:suivi          # list your training actions
+/owlic:suivi <id>     # open one action directly
+```
+
+Opens a pane next to the conversation: the list of your training actions, then, for the one you pick, the progress of its 8 workflow steps (beneficiaries, sessions, trainers, pricing, conventions awaiting signature…). Arrows and Enter to navigate, `b` back to the list, `r` to refresh. The pane refreshes by itself after Claude calls the Owlic API. On a Claude Code version without mod support, the same command gives the follow-up as text.
+
 ## What's inside
 
 **Agents**
@@ -63,6 +72,8 @@ Examples:
 | 8 | Generate the convention | `generate-convention` |
 
 Each prep skill interviews you and drafts that step's data without sending anything; the `owlic-training-actions` agent then saves it through the API. The `call-owlic-api` skill handles authentication and error handling for every call.
+
+The `hooks/` module adds the `/owlic:suivi` follow-up pane.
 
 ## License
 

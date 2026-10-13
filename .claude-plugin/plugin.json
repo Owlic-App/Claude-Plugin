@@ -17,5 +17,6 @@
     "formation",
     "slash-command",
     "specialist-agent"
-  ]
+  ],
+  "types": "./types/index.d.ts"
 }
