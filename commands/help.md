@@ -1,19 +1,27 @@
 ---
-description: Show Owlic plugin usage — the available domains and example commands. Thin launcher that asks the owlic-router agent for its help output, the single source of truth for what the plugin can do.
+description: Show Owlic plugin usage — the available commands, domains and examples. Answers directly, without spawning an agent.
 argument-hint: "(no arguments — prints usage)"
-allowed-tools: Task
 ---
 
 # /owlic:help
 
-Invoke the `owlic-router` agent via the `Task` tool to print the Owlic usage help.
-
-Do **not** inline or duplicate the help text here — it lives in `owlic-router` (the single source of truth for the available domains). This command is a thin launcher.
-
-## Execute
+Print the help block below verbatim, as your whole reply. No tool call, no agent, nothing added before or after.
 
 ```
-Task(subagent_type="owlic-router", prompt="help")
-```
+# Owlic — commands
 
-Return the agent's help output verbatim.
+/owlic:owlic <request>   Do something in Owlic, in plain language; routed to the right specialist
+/owlic:suivi [actionId]  Follow-up pane: your training actions, then the 8 workflow steps of one
+/owlic:help              This help
+
+Domains behind /owlic:owlic:
+- Training Programs (browse/look up the catalog, read-only)
+- Training Actions (create + drive the Qualiopi workflow)
+
+Examples:
+  /owlic:owlic list the training programs on cybersecurity
+  /owlic:owlic create a training action for SIRET 12345678900012 and start the needs analysis
+  /owlic:suivi
+
+Not yet covered: trainers directory.
+```
