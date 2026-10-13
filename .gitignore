@@ -1,0 +1,7 @@
+
+# Owlic API credentials — read by the agents, never commit
+.env
+.owlic/
+
+# agentic-factory local working memory
+.ai/
