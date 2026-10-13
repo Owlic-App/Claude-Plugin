@@ -1,0 +1,14 @@
+{
+  "name": "owlic",
+  "owner": {
+    "name": "Owlic"
+  },
+  "plugins": [
+    {
+      "name": "owlic",
+      "source": "./",
+      "description": "Owlic API specialists: training programs, training actions and the Qualiopi workflow."
+    }
+  ],
+  "description": "Official Claude Code plugins for the Owlic training management platform."
+}
